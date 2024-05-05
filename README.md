@@ -14,6 +14,8 @@ plotakta.py [options] filename.csv
 
 * Export your Akta results file as a .csv file, making sure to include the data that you would like to eventually plot. Avoid spaces in the filename.
 
+* File names of .csv files will be used as plot titles
+
 ## Options
 
 *The UV-280 trace will be drawn by default*
@@ -88,6 +90,7 @@ This is a fairly simple script that reads the columns from the .csv file and ide
 | Heading       | Data          		|
 | ------------- |---------------------- |
 | UV 1_280      | UV trace at 280nm		|
+| UV | UV trace at 280nm		|
 | UV 2_260      | UV trace at 260nm     |
 | Cond      	| Conductance trace 	|
 | Conc B 		| Percent B trace   	|
@@ -99,9 +102,7 @@ The data is plotted depending on the options selected in the command line argume
 
 The CETAC fractions are labeled assuming that true fractions are in between two dips in the signal (also shown for verification). See the last example above.
 
-## Updates
-
-* 2022-10-21: Added UV-260nm option.
+The default font for both titles and axis labels is Liberation Serif.
 
 ## License
 
